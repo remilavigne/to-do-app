@@ -26,6 +26,7 @@ function ToDoList(){
             const updatedTasks = [...tasks];
             [updatedTasks[index], updatedTasks[index -1] = updatedTasks[index - 1], updatedTasks[index]];
             setTasks(updatedTasks);
+            console.log("move up")
         }
     }
 
@@ -56,7 +57,7 @@ function ToDoList(){
             {tasks.map((task, index) =>
                 <li key={index}>
                     <span className='text'>{task}</span>
-                    <button className='delete-task' onClick={() => deleteTask(index)}>Delete -</button>
+                    <button className='delete-task' onClick={() => deleteTask(index)}>Delete</button>
                     <button className='move-task' onClick={() => moveTaskUp(index)}>Move up</button>
                     <button className='move-task' onClick={() => moveTaskDown(index)}>Move Down</button>
                 </li>)}

@@ -8,12 +8,13 @@ h1{
   font-size: 4rem;
 }
 button{
-  font-size: 2.17rem;
+  font-size: 1.5rem;
   font-weight: bold;
   padding: 10px 20px;
-  color: antiquewhite;
+  color: rgb(0, 0, 0);
   border: none;
   border-radius: 5px;
+  margin: 15px;
   cursor: pointer;
   transition: background-color 0.5s ease;
 }
@@ -23,16 +24,16 @@ button{
 .add-button:hover{
   background-color: blue;
 }
-.delete-button{
+.delete-task{
   background-color: red;
 }
-.delete-button:hover{
+.delete-task:hover{
   background-color: orange;
 }
-.move-button{
+.move-task{
   background-color: aqua;
 }
-.move-button:hover{
+.move-task:hover{
   background-color: violet;
 }
 input[type="text"]{
@@ -59,7 +60,6 @@ li{
 .text{
   flex: 1;
 }
-.delete-button, .move-button{
-  padding: 8px 12px;
+.delete-task, .move-task{
   font-size: 1.4rem;
 }
